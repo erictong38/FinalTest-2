@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Create Account
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-image no-scroll" padding>
+    <img src="assets/imgs/Users-Police-icon.png" class="logo">
+    <div> 
+      <ion-list class="list" inset> 
+        <ion-item class="label">
+          <ion-label color="myWhite" style="font-size: 16px" stacked>Username</ion-label>
+          <ion-input type="text" #username placeholder="Enter Username"></ion-input>
+        </ion-item>
+        <ion-item class="label">
+            <ion-label color="myWhite" style="font-size: 16px" stacked>Password</ion-label>
+            <ion-input type="password" #password placeholder="Enter Password"></ion-input>
+          </ion-item>
+      </ion-list>
+</div>
+<div padding>
+  <button block ion-button (click)="registerUser()" item-left>Register</button>
+</div>
+
+</ion-content>
